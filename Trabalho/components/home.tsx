@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Text, Image, StyleSheet, Platform, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import Sobre from './sobre';
-import Image from ''
+
 
 export default function HomeScreen() {
     const[page, setPage] = React.useState('home');
@@ -10,12 +10,12 @@ export default function HomeScreen() {
         if(page === 'home') {
             return(
                 <View style={styles.container}>
-                    <Text >Descubra a sua</Text>
-                    <Text >Localização</Text>
-                    <Text >Acesse qualquer localização em qualquer lugar em <Text>tempo real!</Text></Text>
-                    <Image source={} />
-                    <TouchableOpacity  onPress={() => setPage('sobre')}>
-                            <Text >Clique Aqui</Text>
+                    <Text style={styles.h2}>Descubra a sua</Text>
+                    <Text style={styles.h1}>Localização</Text>
+                    <Text style={styles.p}>Acesse qualquer localização em qualquer lugar em <Text style={styles.span}>tempo real!</Text></Text>
+                    <Image style={styles.image} source={require('../assets/imageHome.png')} />
+                    <TouchableOpacity style={styles.button}  onPress={() => setPage('sobre')}>
+                            <Text style={styles.buttonText}>Entrar</Text>
                     </TouchableOpacity>
                 </View>
             );
@@ -30,7 +30,49 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
     container:{
-      flex: 1,
-      
+      height: 800,
+      width: 360,
+      padding: 30,
+      backgroundColor: '#0E131F',
     },
+    h2:{
+        color: '#F0F8FF',
+        fontSize: 24,
+        fontWeight: 'bold',
+        paddingTop: 100,
+    },
+    h1:{
+        color: '#4169E1',
+        fontSize: 36,
+        fontWeight: 'bold',
+    },
+    p:{
+        width: 300,
+        color: '#F0F8FF',
+        fontWeight: 'medium',
+        paddingTop: 17,
+    },
+    span:{
+        color: '#4169E1',
+        fontWeight: 'semibold',
+    },
+    image:{
+        marginTop: 110,
+        marginBottom: 162,
+        marginLeft: 18,
+    },
+    button:{
+        width: 300,
+        height: 46,
+        backgroundColor: '#4169E1',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        
+    },
+    buttonText:{
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#F0F8FF',
+    }
 });

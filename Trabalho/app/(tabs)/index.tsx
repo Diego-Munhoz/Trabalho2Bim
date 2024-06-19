@@ -1,4 +1,4 @@
-import { View, Image, StyleSheet, Platform } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 import Home from '../../components/home';
 

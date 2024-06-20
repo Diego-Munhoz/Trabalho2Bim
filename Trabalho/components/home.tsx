@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         color: '#F0F8FF',
         fontSize: 24,
         fontWeight: 'bold',
-        paddingTop: 100,
+        paddingTop: 70,
     },
     h1:{
         color: '#4169E1',
@@ -57,13 +57,15 @@ const styles = StyleSheet.create({
         fontWeight: 'semibold',
     },
     image:{
+        width: 263,
+        height: 205, 
         marginTop: 110,
-        marginBottom: 162,
         marginLeft: 18,
     },
     button:{
         width: 300,
         height: 46,
+        marginTop: 162,
         backgroundColor: '#4169E1',
         borderRadius: 10,
         justifyContent: 'center',

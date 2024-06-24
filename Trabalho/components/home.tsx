@@ -12,7 +12,8 @@ export default function HomeScreen() {
                 <View style={styles.container}>
                     <Text style={styles.h2}>Descubra a sua</Text>
                     <Text style={styles.h1}>Localização</Text>
-                    <Text style={styles.p}>Acesse qualquer localização em qualquer lugar em <Text style={styles.span}>tempo real!</Text></Text>
+                    <Text style={styles.p}>Acesse qualquer localização em qualquer lugar 
+                        em <Text style={styles.span}>tempo real!</Text></Text>
                     <Image style={styles.image} source={require('../assets/imageHome.png')} />
                     <TouchableOpacity style={styles.button}  onPress={() => setPage('sobre')}>
                             <Text style={styles.buttonText}>Entrar</Text>
